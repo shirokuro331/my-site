@@ -1,17 +1,8 @@
 html {
-  font-size: var(--font-size);
-  @media (--breakpoint-medium) {
-    font-size: var(--font-size-m);
-  }
-  @media (--breakpoint-large) {
-    font-size: var(--font-size-l);
-  }
-  background-color: var(--black);
 }
 
 
 body {
-  font-family: var(--font-family);
   font-size: var(--spacing-medium);
   line-height: var(--line-height);
   font-weight: var(--body-font-weight);
@@ -22,7 +13,6 @@ body {
 
 p {
   margin-bottom: var(--spacing-medium);
-  max-width: 32rem;
 }
 
 strong {
