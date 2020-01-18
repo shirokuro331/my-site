@@ -8,11 +8,13 @@
   }
 
   & h1 {
-    font-size: 2.25rem;
+		font-size: 2.25rem;
   }
 
   & h2 {
-    font-size: 1.5rem;
+		font-size: 1.8rem;
+		margin-top: var(--spacing-extra-large);
+		margin-bottom: var(--spacing-large);
   }
 
   & h3 {
@@ -20,17 +22,23 @@
   }
 
   & h4 {
-    font-size: 1rem;;
+    font-size: 1rem;
   }
 
   & h5 {
     font-size: .875rem;
+	}
+	
+	& p {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+		line-height: 1.8;
   }
 
 	/* Images */
 	& img {
 		display: block;
-		margin-bottom: var(--spacing-medium);
+		margin-bottom: var(--spacing-large);
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 100%;
@@ -38,11 +46,9 @@
 
 	/* Links */
 	& a {
-		color: var(--primary);
-		transition: var(--hover-transition);
+		text-decoration: underline;
 		&:hover {
-			background-color: var(--highlight);
-			color: var(--black);
+			text-decoration: none;
 		}
 	}
 
@@ -52,7 +58,7 @@
 	}
 
 	& ul, & ol {
-		margin-bottom: var(--spacing-medium);
+		margin-bottom: 2rem;
 	}
 
 	& ul ul, & ol ol {
@@ -61,38 +67,31 @@
 
 	& ul {
 		margin-left: 1.33rem;
-		& >li:before {
-			content: '✱';
-			left: -1.33rem;
-			position: absolute;
-			color: var(--primary);
-		}
+		list-style: disc;
+	}
+
+	& li {
+		font-size: 1.1rem;
 	}
 
 	& ol {
+		margin-left: 1.33rem;
 		list-style: none;
 		margin-left: var(--spacing-medium);
 		counter-reset: i 0;
     & >li:before {
-      font-weight: 800;
-      left: var(--spacing-medium);
-      margin-right: 1.33rem;
+      margin-right: 1.4rem;
       position: relative;
       height: 100%;
       content: counter(i);
-      counter-increment: i;
-      color: var(--primary);
+      counter-increment: i; 
     }
 	}
 
   /* Blockquotes */
   & blockquote {
-    background-color: var(--grey-1);
     display: block;
     border-radius: var(--border-radius);
-    padding: var(--spacing-medium);
-    color: var(--primary);
-    font-weight: 700;
     font-size: 1.25rem;;
     margin-bottom: var(--spacing-medium);
     & p {

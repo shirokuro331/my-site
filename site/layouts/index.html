@@ -1,13 +1,92 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+<article>
+  <figure><img src="/img/sasaki.png"></figure>
+  <h1>佐々木 敏明</h1>
+  <p class="en-notation">Toshiaki Sasaki</p>
+  <div class="description">
+      <p>渋谷で働くプロダクトマネージャー。1981年生まれ。Web デザイナー、ディレクター、事業責任者を経て現在に至る。社会課題の解決と同時に成果を最大化させるためのプロダクト開発に従事。</p>
+  </div>
 
-{{ partial "short-text" .Params.blurb}}
+  <ul>
+      <li><a href="https://twitter.com/shirokuro331" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/shirokuro331/" target="_blank">Instagram</a></li>
+      <li><a href="https://github.com/shirokuro331" target="_blank">Github</a></li>
+      <li><a href="https://speakerdeck.com/shirokuro331" target="_blank">Speaker Deck</a></li>
+      <li><a href="https://www.slideshare.net/shirokuro331" target="_blank">SlideShare</a></li>
+      <li><a href="/post">blog</a></li>
+      <li><a href="mailto@shirokuro331@gmail.com" target="_blank">mail</a></li>
+  </ul>
 
-{{ partial "2-up" .Params }}
+  <section class="work">
+      <h2>Work Experience</h2>
+      <dl>
+          <dt>CAMPFIRE, Inc.</dt>
+          <dd class="period">2017/07 - Present</dd>
+          <dd class="role">Product Manager / Director</dd>
+      </dl>
+      
+      <dl>
+          <dt>Biztex, Inc.</dt>
+          <dd class="period">2017/12 - 2018/10</dd>
+          <dd class="role">Web Director / Web Designer</dd>
+      </dl>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+      <dl>
+          <dt>ALL CONNECT Co.,Ltd</dt>
+          <dd class="period">2012/06 - 2017/06</dd>
+          <dd class="role">Business Officer / Contents Director / Web Director / Web Designer</dd>
+      </dl>
 
-{{ partial "blog" . }}
+      <dl>
+          <dt>Baseline, Inc.</dt>
+          <dd class="period">2011/06 - 2012/05</dd>
+          <dd class="role">Web Director / Web Designer</dd>
+      </dl>
+
+      <dl>
+          <dt>Surfboard Co.,Ltd.</dt>
+          <dd class="period">2008/12 - 2011/05</dd>
+          <dd class="role">Web Designer</dd>
+      </dl>
+  </section>
+
+  <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+          <li>Product Management</li>
+          <li>Project Management</li>
+          <li>Web Direction</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+          <li>HTML, CSS(Sass), Javascript(jQuery)</li>
+          <li>Improve Web Site Performance</li>
+          <li>Web analysis</li>
+          <li>Serch Experience Optimize</li>
+          <li>Contents Direction</li>
+      </ul>   
+  </section>
+
+  <h2>Tools</h2>
+
+  <ul>
+      <li>Adobe Photoshop, Illustorator, XD</li>
+      <li>Google Analytics, Search Console, Google Tag Manager</li>
+      <li>GitHub</li>
+      <li>Asana</li>
+  </ul>
+
+  <h2>Loves</h2>
+
+  <ul>
+      <li>Manga</li>
+      <li>Technology</li>
+      <li>Music</li>
+      <li>and Family</li>
+  </ul>
+
+</article>
+
+
 
 {{ end }}
