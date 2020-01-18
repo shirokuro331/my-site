@@ -46,12 +46,9 @@
 
 	/* Links */
 	& a {
-		color: var(--primary);
-		transition: var(--hover-transition);
 		text-decoration: underline;
 		&:hover {
-			background-color: var(--highlight);
-			color: var(--black);
+			text-decoration: none;
 		}
 	}
 
@@ -61,7 +58,7 @@
 	}
 
 	& ul, & ol {
-		margin-bottom: var(--spacing-medium);
+		margin-bottom: 2rem;
 	}
 
 	& ul ul, & ol ol {
@@ -70,27 +67,24 @@
 
 	& ul {
 		margin-left: 1.33rem;
-		margin-bottom: 2rem;
+		list-style: disc;
 	}
 
 	& li {
 		font-size: 1.1rem;
-		list-style: disc;
 	}
 
 	& ol {
+		margin-left: 1.33rem;
 		list-style: none;
 		margin-left: var(--spacing-medium);
 		counter-reset: i 0;
     & >li:before {
-      font-weight: 800;
-      left: var(--spacing-medium);
-      margin-right: 1.33rem;
+      margin-right: 1.4rem;
       position: relative;
       height: 100%;
       content: counter(i);
-      counter-increment: i;
-      color: var(--primary);
+      counter-increment: i; 
     }
 	}
 
