@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <div class="mw7 center">
-  <ul class="mr3">
-      {{ range (.Paginator 10).Pages.ByPublishDate.Reverse }}
+  <ul class="mr4">
+      {{ range (.Paginator 8).Pages.ByPublishDate.Reverse }}
           <div class="ph1-ns flex">
             {{ .Render "li"}}
           </div>
