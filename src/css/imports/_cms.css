@@ -18,7 +18,8 @@
   }
 
   & h3 {
-    font-size: 1.25rem;
+		font-size: 1.25rem;
+		margin: 3rem 0 1.2rem;
   }
 
   & h4 {
@@ -72,6 +73,7 @@
 
 	& li {
 		font-size: 1.1rem;
+		line-height: 1.6;
 	}
 
 	& ol {
